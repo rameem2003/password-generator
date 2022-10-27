@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h3>Password Generator</h3>
+
+        <div class="output">
+            <input type="text" name="" id="output_window" placeholder="Genarate Password" disabled>
+            <i class="fa-solid fa-copy" id="copyBtn"></i>
+        </div>
+
+        <div class="range">
+            <input type="range" name="" id="rangeBar" min="6" max="16" value="10">
+            <span id="rangeValue">10</span>
+        </div>
+
+        <button id="genBtn" type="button">Ganerate</button>
+    </div>
+
+    <div class="toast" id="toast">
+        <p>Copied Password ❤</p>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
